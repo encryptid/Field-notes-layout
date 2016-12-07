@@ -29,10 +29,10 @@ header {
     }
 
     body {
-        @include grid-row();
+        @include grid-row ();
 
         .row-1 {
-            @include grid-column(12);        
+            @include grid-column (12);        
             background-image: url(http://placehold.it/1423x547);
 
             h1, h3 {
@@ -48,17 +48,26 @@ header {
         }
 
         .row-2 {
+            @include grid-column(12);
 
             #sec-1 {
                 @include grid-column(8);
-                background-image: url(http://placehold.it/900x300);
+                /* background-image: url(http://placehold.it/900x300); */
                 text-align: center;
             }
 
             #sec-2 {
                 @include grid-column(4);
-                background-image: url(http://placehold.it/400x300);
+                /* background-image: url(http://placehold.it/400x300); */
                 text-align: center;
             }
+        }
+    }
+
+    main {
+        @include grid-row();
+
+        .header {
+            @include grid-column (12);
         }
     }
