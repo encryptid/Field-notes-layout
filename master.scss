@@ -1,0 +1,10 @@
+@import 'node_modules/foundation-sites/scss/foundation';
+
+@include foundation-global-styles;
+@include foundation-grid;
+
+$font-style-main: "futura w0 bold", futura, sans-serif;
+
+@import 'header';
+@import 'main';
+@import 'footer';

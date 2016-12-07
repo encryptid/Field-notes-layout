@@ -1,0 +1,64 @@
+header {
+    font-style: $font-style-main;
+    @include grid-row ();
+
+    .upper-left {
+        @include grid-column(2);
+        text-align: left;
+    }
+
+    .upper-center {
+        @include grid-column(8);
+        text-align: center;
+        display: block;
+
+        h4 {
+            @include grid-column(3);
+            display: inline-block;
+        }
+    }
+
+    .upper-right{
+        @include grid-column(2);
+
+        h5 {
+            @include grid-column(6);
+            text-align: right;
+        }
+        }
+    }
+
+    body {
+        @include grid-row();
+
+        .row-1 {
+            @include grid-column(12);        
+            background-image: url(http://placehold.it/1423x547);
+
+            h1, h3 {
+                text-align: center;
+            }
+
+            h5 {
+                text-align: center;
+                border: 1px solid white;
+                /* @include grid-column(2); */
+                
+            }
+        }
+
+        .row-2 {
+
+            #sec-1 {
+                @include grid-column(8);
+                background-image: url(http://placehold.it/900x300);
+                text-align: center;
+            }
+
+            #sec-2 {
+                @include grid-column(4);
+                background-image: url(http://placehold.it/400x300);
+                text-align: center;
+            }
+        }
+    }
